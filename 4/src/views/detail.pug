@@ -1,0 +1,11 @@
+extends layouts/main
+
+block content
+    h1
+        a(href="/") Home
+    h1=movieDetail.title
+    p=movieDetail.summary
+
+    ul
+        each genres in movieDetail.genres
+            li=genres
