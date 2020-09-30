@@ -1,26 +1,28 @@
 import express from "express";
+import routes from "./routes";
 import {
-  deleteMovie,
-  getCreate,
-  getEditMovie,
   home,
-  movieDetail,
-  postCreate,
-  postEditMovie,
   search,
+  getCreate,
+  postCreate,
+  getEditMovie,
+  postEditMovie,
+  deleteMovie,
+  movieDetail
 } from "./movieController";
-import routes from "../routes";
 
 const movieRouter = express.Router();
 
+// Add your magic here!
+
 movieRouter.get(routes.home, home);
+
+movieRouter.get(routes.search, search);
 
 movieRouter.get(routes.create, getCreate);
 movieRouter.post(routes.create, postCreate);
 
-movieRouter.get(routes.search, search);
-
-movieRouter.get(routes.movieDetail(), movieDetail);
+movieRouter.get(routes.seeMovie(), movieDetail);
 
 movieRouter.get(routes.editMovie(), getEditMovie);
 movieRouter.post(routes.editMovie(), postEditMovie);
