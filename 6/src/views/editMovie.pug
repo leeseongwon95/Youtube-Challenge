@@ -1,0 +1,12 @@
+extends layouts/main.pug
+
+block content
+    h1 Editing #{movie.title}
+    form(action=routes.editMovie(movie.id), method="post")
+        input(type="text", placeholder="Title", name="title", value=movie.title)
+        input(type="number", placeholder="Year", name="year", value=movie.year)
+        input(type="text", placeholder="Rating", name="rating" value=movie.rating)
+        textarea(name="synopsis", placeholder="Synopsis", cols="30", rows="3")=movie.synopsis
+        input(type="text", placeholder="Genres", name="genres", value=genres)
+        input(type="submit" value="Submit")
+    a(href=routes.deleteMovie(movie.id)) Delete Movie

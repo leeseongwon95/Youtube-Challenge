@@ -1,0 +1,11 @@
+extends layouts/main.pug
+
+block content
+    h1=pageTitle
+    form(action=routes.create, method="post")
+        input(type="text", placeholder="Title", name="title")
+        input(type="number", placeholder="Year", name="year")
+        input(type="text", placeholder="Rating", name="rating")
+        textarea(name="synopsis", placeholder="Synopsis", cols="30", rows="3")
+        input(type="text", placeholder="Genres", name="genres")
+        input(type="submit" value="Submit")
