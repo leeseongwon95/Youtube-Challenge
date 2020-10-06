@@ -1,0 +1,10 @@
+doctype html
+html
+  head
+    title File Getto!
+  body
+    h1 TXT2HTML
+    .form-container
+        form(action='/upload' method="post" enctype="multipart/form-data")
+            input(type="file" id="file" name="txtFile" required=true accept=".txt")
+            input(type="submit" value="Convert!")
