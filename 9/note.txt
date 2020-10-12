@@ -1,0 +1,12 @@
+1. 시작 정지 버튼 o
+2. 사용자가 마우스를 hover했을때 player bar 표시 o
+3. 마우스가 움직이지 않는다면 비디오 위에서 hover했더라고 play bar를 숨긴다 x
+4. 스페이스바를 누르면 재생 정지 가능하게 o
+5. 음소거 버튼만들기 o
+6. 비디오가 끝나면 다시 재생되야함 o
+7. 현재시간/총시간 o
+8. 폰트어썸사용 o
+
+https://freshman.tech/custom-html5-video/
+
+https://codepen.io/blackjacques/pen/bgamaj

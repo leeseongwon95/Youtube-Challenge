@@ -1,0 +1,230 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+*,
+input {
+    box-sizing: border-box;
+}
+
+input {
+    border: none;
+    box-sizing: border-box;
+}
+
+input:focus,
+input:active {
+    outline: none;
+}
+
+/* CSS */
+
+body {
+    font-family: sans-serif;
+}
+
+.videoPlayer {
+    position: relative;
+    width: 700px;
+    margin: 20px;
+}
+
+.videoPlayer:hover .videoPlayer__controls.hover {
+    opacity: 1;
+}
+
+video {
+    width: 100%;
+    max-width: 100%;
+}
+
+.videoPlayer__controls {
+    opacity: 0;
+    transition: opacity 0.4s linear;
+    color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    bottom: 5px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    font-size: 16px;
+}
+
+.videoPlayer__column:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.videoPlayer__column:first-child #jsPlayBtn {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.videoPlayer__column #jsVolumeBtn {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.videoPlayer__volume {
+    position: absolute;
+    padding: 0;
+    opacity: 1;
+    top: -60px;
+    left: 590px;
+    transform: rotate(-90deg);
+    z-index: 10;
+    width: 80px;
+    cursor: pointer;
+}
+
+.videoPlayer__column #jsSettingBtn {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+#progress-bar {
+    color: #f8d84a;
+    font-size: 12px;
+    width: 360px;
+    height: 6px;
+    border: none;
+    margin-right: 10px;
+    background: #434343;
+    border-radius: 9px;
+    vertical-align: middle;
+    cursor: pointer;
+}
