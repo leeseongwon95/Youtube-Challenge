@@ -1,0 +1,3 @@
+globalController , globalRouter 를 활용하여 페이지 변경
+main footer 로 4개의 페이지에 적용
+미들웨어로 local site name 만들기

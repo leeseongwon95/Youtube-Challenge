@@ -1,0 +1,21 @@
+getMovies는 movies의 배열을 반환합니다.
+console.log로 봤을때 형태는 object입니다.
+
+getMovieById는 movie object를 반환합니다.
+이것은 인수로 ID가 필요하며 동영상이 없다면 undefined로 반환됩니다.
+
+getMovieByMinimumRating은 movies의 배열을 반환합니다.
+이것은 숫자를 요구하고 레이팅이 같더나 숫자보다 높은 movies의 배열을 반환합니다.
+
+getMovieByMinimumYear은 movies의 배열을 반환합니다.
+이것은 숫자를 요구하고 개봉년도가 같거나 숫자보다 더 높은 년도의 movies 배열을 반환합니다.
+
+1. 모든 controllers을 완성하기
+2. pug를 사용하고 mixins로 페이지와 영화목록을 렌더링 하라
+3. 템플릿을 사용하라
+4. 3개의 pug만 가질수 있다 (movies.pug, 404.pug, detail.pug)
+5. middlewares를 사용하여 siteTitle을 locals에 추가해라
+6. /는 movie.pug를 렌더링하고 영화 리스트를 보여준다
+7. /id는 영화의 디테일을 렌더링한다
+8. /filter는 년도와 레이팅을 필터한다.
+9. The app must behave exactly like the video

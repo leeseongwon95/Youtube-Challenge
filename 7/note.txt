@@ -1,0 +1,6 @@
+txt 파일을 가지고, 읽을수 있으며 유저에게 파일의 내용을 보여주는 웹사이트를 만드세요.
+1. / 페이지는 폼을가진다, 사용자가 txt파일을 업로드 할수있는
+2. 파일 업로드는 multer, 파일 읽기는 fs로 하고, 사용자게에 파일의 내용을 보여주는 다른 템플릿을 렌더링 한다.
+
+https://jamong-icetea.tistory.com/133 - multer
+https://opentutorials.org/module/938/7373 - fs
