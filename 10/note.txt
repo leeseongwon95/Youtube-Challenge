@@ -1,0 +1,5 @@
+1. start, stop recoding button 만들기
+2. 녹음 진행 시간 표시
+3. 녹음을 중단하면 파일로 다운로드 되야함
+4. async await 사용하지 말기
+5. 오디오를 저장할때 {type:"audio/webm;codecs=opus"} 사용하기
